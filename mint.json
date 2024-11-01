@@ -1,91 +1,83 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Mono Documentation",
+    "logo": {
+        "dark": "/logo/dark.svg",
+        "light": "/logo/light.svg"
     },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+    "favicon": "/favicon.png",
+    "colors": {
+        "primary": "#0B4BE2",
+        "light": "#4D7FEA",
+        "dark": "#0B4BE2",
+        "anchors": {
+            "from": "#0B4BE2",
+            "to": "#4D7FEA"
+        }
     },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+    "topbarLinks": [
+        {
+            "name": "Support",
+            "url": "https://support.mono.co/en"
+        }
+    ],
+    "topbarCtaButton": {
+        "name": "Get API Keys",
+        "url": "https://app.mono.co/apps/"
+    },
+    "anchors": [
+        {
+            "name": "SDKs",
+            "icon": "puzzle-piece",
+            "url": "https://docs.mono.co/docs/sdks"
+        },
+        {
+            "name": "Community",
+            "icon": "slack",
+            "url": "https://devwithmono.slack.com/join/shared_invite/zt-296d52n0h-JPVfKGnCDHWB5Mg7BsgfrA#/shared-invite/email"
+        }
+    ],
+    "navigation": [
+        {
+            "group": "Getting Started",
+            "pages": [
+                "/content/index",
+                "/content/quickstart"
+            ]
+        },
+        {
+            "group": "Connect.js SDK",
+            "pages": [
+                {
+                    "group": "Usage",
+                    "pages": [
+                        "content/sdk/connect-js/usage/basic-integration",
+                        "content/sdk/connect-js/usage/reauthorization",
+                        "content/sdk/connect-js/usage/direct-debit"
+                    ]
+                },
+                {
+                    "group": "Framework Guides",
+                    "pages": [
+                        "content/sdk/connect-js/frameworks/react",
+                        "content/sdk/connect-js/frameworks/angular",
+                        "content/sdk/connect-js/frameworks/nextjs"
+                    ]
+                },
+                {
+                    "group": "API Reference",
+                    "pages": [
+                        "content/sdk/connect-js/reference/methods",
+                        "content/sdk/connect-js/reference/events",
+                        "content/sdk/connect-js/reference/parameters"
+                    ]
+                }
+            ]
+        }
+    ],
+    "footerSocials": {
+        "twitter": "https://twitter.com/mono_HQ",
+        "github": "https://github.com/withmono",
+        "linkedin": "https://www.linkedin.com/company/mono-co"
     }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
 }
